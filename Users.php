@@ -6,13 +6,14 @@
     
         public $lastName;
 
-        public $creditCard;
+        public $email;
 
-        public $shoppingCart;
+        private $creditCard;
 
-        public function __construct($_name, $_lastName, $_creditCard) {
+        public function __construct($_name, $_lastName, $_email , $_creditCard) {
             $this->name = $_name;
             $this->lastName = $_lastName;
+            $this->email = $_email;
             $this->creditCard = $_creditCard;
         }
 
@@ -20,8 +21,8 @@
             return [
                 'name' => $this->name,
                 'lastname' => $this->lastName,
+                'email' => $this->email,
                 'creditcard' => $this->creditCard,
-                'shoppingcart' => $this->shoppingCart,
             ]; 
         }
     }

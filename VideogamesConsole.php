@@ -7,6 +7,14 @@ require_once __DIR__ . '/Products.php';
         public $typology = 'Videogames or Console';
 
         public $category;
+
+        // override
+        public function getInfoData() {
+            $data_array = parent::getInfoData(); 
+            $data_array['category'] = $this->category;
+    
+            return $data_array;
+        }
     }
 
 ?>
