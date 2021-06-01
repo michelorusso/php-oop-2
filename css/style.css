@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* HEADER */
+header {
+    background-color: #131921;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    position: relative;
+    width: 120px;
+    text-align: center;
+}
+
+.logo h3 {
+    font-size: 22px;
+}
+
+h3 span {
+    font-weight: 300;
+    font-size: 15px
+}
+
+.logo img{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+/* Counrty_user */
+.country_user {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.country_user span {
+    font-size: 12px;
+    color: lightgray;
+    font-weight: 500;
+}
+
+.country_user .country {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Input */
+.input {
+    margin: 0 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+}
+
+input { 
+    width: 500px;
+    height: 38px;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    border: none;
+}
+
+select {
+    height: 38px;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    color: gray;
+    border-radius: 4px 0 0 4px;
+    padding: 0 10px;
+}
+
+label {
+    height: 38px;
+    padding: 10px;
+    background-color: #febd69;
+    color: black;
+    border-radius: 0 4px 4px 0;
+}
+
+label i {
+    vertical-align: unset;
+    font-size: 20px;
+}

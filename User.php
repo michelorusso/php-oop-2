@@ -1,20 +1,18 @@
 <?php
-
-    class Users {
+    class User {
 
         public $name;
     
         public $lastName;
 
         public $email;
+        
+        protected $shoppingCart = [];
 
-        private $creditCard;
-
-        public function __construct($_name, $_lastName, $_email , $_creditCard) {
+        public function __construct($_name, $_lastName, $_email ) {
             $this->name = $_name;
             $this->lastName = $_lastName;
             $this->email = $_email;
-            $this->creditCard = $_creditCard;
         }
 
         public function getInfoData() {
@@ -22,10 +20,15 @@
                 'name' => $this->name,
                 'lastname' => $this->lastName,
                 'email' => $this->email,
-                'creditcard' => $this->creditCard,
             ]; 
         }
+
+        public function addCart($product) {
+            $this->shoppingCart[] = $product;
+        }
+
+        public function getCart() {
+            return $this->shoppingCart;
+        }
     }
-
-
 ?>

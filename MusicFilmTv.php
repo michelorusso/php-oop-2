@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/Products.php';
+require_once __DIR__ . '/Product.php';
 
-    class MusicFilmTv extends Products {
+    class MusicFilmTv extends Product {
         // override
         public $typology = 'Music/Movie/Tv';
 
