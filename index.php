@@ -76,7 +76,7 @@ $users->addCart($godOfWar);
         <div class="country_user">
             <i class="fas fa-map-marker-alt"></i>
             <div class="country">
-                 <span>Invia a Michele</span>
+                 <span>Invia a Gino</span>
                  <div>Gravina I...70024</div>
             </div>
         </div>
@@ -91,6 +91,14 @@ $users->addCart($godOfWar);
             <input id="search" type="text">
             <label for="search"><i class="fas fa-search"></i></label>
         </div>
+        <!-- End Input -->
+
+        <!-- List -->
+        <div class="list">
+            <span>Ciao Gino</span>
+            <div>Account & Liste</div>
+        </div>
+        <!-- End List -->
 
     </header>
     <!-- Header -->
